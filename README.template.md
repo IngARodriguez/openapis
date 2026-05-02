@@ -19,6 +19,7 @@
 [![OpenAI compatible](https://img.shields.io/badge/OpenAI-compatible-000?style=flat-square&logo=openai&logoColor=white)](#openai)
 [![Anthropic compatible](https://img.shields.io/badge/Anthropic-compatible-D97757?style=flat-square)](#anthropic)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-CLI%20ready-D97757?style=flat-square)](#claude-code-cli)
+[![OpenCode](https://img.shields.io/badge/OpenCode-CLI%20ready-FF5C00?style=flat-square)](#opencode-cli)
 
 **OpenAPIs** es un proxy unificado a **OpenAI** y **Anthropic**. Drop-in compatible con los SDKs oficiales — solo cambia el `base_url`, conserva tu código.
 
