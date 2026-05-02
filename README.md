@@ -219,33 +219,6 @@ Todo lo que use el formato OpenAI o Anthropic Messages API funciona out-of-the-b
 
 ---
 
-## Demo / Landing
-
-🌐 Landing oficial: **https://openapis.dev** *(próximamente)*
-
-Para correrla localmente:
-
-```bash
-git clone https://github.com/USER/openapis.git
-cd openapis
-python -m http.server 8765
-# Abre http://localhost:8765
-```
-
----
-
-## Roadmap
-
-- [x] OpenAI compatible (`/openai/v1`)
-- [x] Anthropic compatible (`/anthropic/v1`)
-- [x] Streaming SSE
-- [x] Compatibilidad Claude Code
-- [ ] Logs y métricas por petición
-- [ ] Rate limiting per-key
-- [ ] Más proveedores (Google, Mistral, OpenRouter passthrough)
-
----
-
 ## Contacto
 
 - 📧 **hola@openapis.dev** — para conseguir tu clave de la beta
