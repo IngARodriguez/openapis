@@ -186,6 +186,28 @@ $env:ANTHROPIC_AUTH_TOKEN = "admin"
 claude
 ```
 
+### OpenCode (CLI)
+
+```bash
+# Linux / macOS / WSL
+export ANTHROPIC_BASE_URL="https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
+export ANTHROPIC_API_KEY="admin"
+export OPENAI_BASE_URL="https://tapeless-recluse-disperser.ngrok-free.dev/openai"
+export OPENAI_API_KEY="admin"
+
+opencode
+```
+
+```powershell
+# Windows PowerShell
+$env:ANTHROPIC_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
+$env:ANTHROPIC_API_KEY = "admin"
+$env:OPENAI_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/openai"
+$env:OPENAI_API_KEY = "admin"
+
+opencode
+```
+
 ---
 
 ## Modelos disponibles (100+)
