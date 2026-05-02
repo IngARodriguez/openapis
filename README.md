@@ -1,20 +1,20 @@
 <!--
   README TEMPLATE
   ───────────────
-  Para cambiar la URL del endpoint:
-    1. Edita endpoint.txt (una sola línea, la URL base sin path)
-    2. Ejecuta:
+  To change the endpoint URL:
+    1. Edit endpoint.txt (single line, base URL without path)
+    2. Run:
          scripts/update-readme.ps1   (Windows PowerShell)
          scripts/update-readme.sh    (Linux/macOS/WSL/Git Bash)
-    3. Esto regenera README.md sustituyendo https://tapeless-recluse-disperser.ngrok-free.dev por la URL nueva
+    3. This regenerates README.md, replacing https://tapeless-recluse-disperser.ngrok-free.dev with the new URL
     4. git add README.md endpoint.txt && git commit && git push
-  No edites README.md a mano — se sobrescribe.
+  Do not edit README.md by hand — it gets overwritten.
 -->
 # Open**A**P**I**s
 
-> Una sola URL. Una sola clave. Acceso unificado a las mejores IAs del mundo, vía proxy compatible con sus SDKs oficiales.
+> One URL. One key. Unified access to the world's best AI models, via a proxy compatible with their official SDKs.
 
-[![Beta Abierta — Gratis](https://img.shields.io/badge/✨_BETA_ABIERTA-GRATIS-22c55e?style=for-the-badge&labelColor=15803d)](#-beta-abierta--gratis)
+[![Open Beta — Free](https://img.shields.io/badge/✨_OPEN_BETA-FREE-22c55e?style=for-the-badge&labelColor=15803d)](#-open-beta--free)
 [![License: MIT](https://img.shields.io/badge/LICENSE-MIT-6e56cf?style=for-the-badge&labelColor=4c3a9c)](LICENSE)
 &nbsp;
 
@@ -23,31 +23,31 @@
 [![Claude Code](https://img.shields.io/badge/Claude_Code-CLI_READY-D97757?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=1a1a1a)](#claude-code-cli)
 [![OpenCode](https://img.shields.io/badge/OpenCode-CLI_READY-FF5C00?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=1a1a1a)](#opencode-cli)
 
-**OpenAPIs** es un proxy unificado a **OpenAI** y **Anthropic**. Drop-in compatible con los SDKs oficiales — solo cambia el `base_url`, conserva tu código.
+**OpenAPIs** is a unified proxy to **OpenAI** and **Anthropic**. Drop-in compatible with their official SDKs — just swap the `base_url`, keep your code.
 
 ---
 
-## 🎁 Beta abierta — gratis
+## 🎁 Open Beta — Free
 
-> Actualmente en **beta abierta**. Acceso **totalmente gratis** durante la beta.
+> Currently in **open beta**. **Completely free** access while the beta lasts.
 
 ---
 
-## Por qué OpenAPIs
+## Why OpenAPIs
 
 | | |
 |---|---|
-| 🔌 **Drop-in compatible** | Tu código existente con los SDKs oficiales sigue funcionando — cero refactor |
-| ⚡ **Streaming nativo** | SSE end-to-end. Los tokens llegan al instante, sin buffering |
-| 🔐 **Una sola clave** | Olvídate de gestionar múltiples cuentas, dashboards y facturas |
-| 🌐 **Multi-proveedor** | OpenAI + Anthropic + Claude Code bajo la misma URL |
-| 💸 **Único pago** | Sin suscripciones, sin renovaciones, sin sorpresas a fin de mes |
+| 🔌 **Drop-in compatible** | Your existing code with the official SDKs keeps working — zero refactor |
+| ⚡ **Native streaming** | End-to-end SSE. Tokens arrive instantly, no buffering |
+| 🔐 **Single key** | Forget juggling multiple accounts, dashboards, and bills |
+| 🌐 **Multi-provider** | OpenAI + Anthropic + Claude Code under one URL |
+| 💸 **One-time payment** | No subscriptions, no renewals, no end-of-month surprises |
 
 ---
 
-## Configura tus env vars (recomendado)
+## Set up your env vars (recommended)
 
-Los SDKs oficiales de OpenAI y Anthropic leen estas variables automáticamente, así no tienes que pasar `base_url` ni `api_key` en código.
+The official OpenAI and Anthropic SDKs read these variables automatically, so you never have to pass `base_url` or `api_key` in code.
 
 ```bash
 # OpenAI
@@ -67,7 +67,7 @@ $env:ANTHROPIC_API_KEY = "admin"
 $env:ANTHROPIC_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
 ```
 
-> 🚧 **Beta** — el endpoint actual es un túnel ngrok que puede rotar entre reinicios. Si tu request falla, vuelve aquí para la URL actualizada.
+> 🚧 **Beta** — the current endpoint is an ngrok tunnel that may rotate on restart. If a request fails, come back here for the updated URL.
 
 ---
 
@@ -75,7 +75,7 @@ $env:ANTHROPIC_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/ant
 
 ### OpenAI
 
-#### curl — sin streaming
+#### curl — without streaming
 ```bash
 curl https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions \
   -H "Authorization: Bearer admin" \
@@ -83,11 +83,11 @@ curl https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completion
   -d '{
     "model": "gpt-5.5",
     "max_tokens": 1024,
-    "messages": [{"role": "user", "content": "Hola"}]
+    "messages": [{"role": "user", "content": "Hello"}]
   }'
 ```
 
-#### curl — con streaming
+#### curl — with streaming
 ```bash
 curl -N https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions \
   -H "Authorization: Bearer admin" \
@@ -96,11 +96,11 @@ curl -N https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/complet
     "model": "gpt-5.5",
     "max_tokens": 1024,
     "stream": true,
-    "messages": [{"role": "user", "content": "Hola"}]
+    "messages": [{"role": "user", "content": "Hello"}]
   }'
 ```
 
-#### Python — SDK oficial
+#### Python — official SDK
 ```python
 from openai import OpenAI
 
@@ -109,17 +109,17 @@ client = OpenAI(
     base_url="https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1",
 )
 
-# Sin streaming
+# Without streaming
 response = client.chat.completions.create(
     model="gpt-5.5",
-    messages=[{"role": "user", "content": "Hola"}],
+    messages=[{"role": "user", "content": "Hello"}],
 )
 print(response.choices[0].message.content)
 
-# Con streaming
+# With streaming
 with client.chat.completions.stream(
     model="gpt-5.5",
-    messages=[{"role": "user", "content": "Hola"}],
+    messages=[{"role": "user", "content": "Hello"}],
 ) as stream:
     for text in stream.text_stream:
         print(text, end="", flush=True)
@@ -127,7 +127,7 @@ with client.chat.completions.stream(
 
 ### Anthropic
 
-#### curl — sin streaming
+#### curl — without streaming
 ```bash
 curl https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages \
   -H "x-api-key: admin" \
@@ -136,11 +136,11 @@ curl https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages \
   -d '{
     "model": "claude-opus-4-7",
     "max_tokens": 1024,
-    "messages": [{"role": "user", "content": "Hola"}]
+    "messages": [{"role": "user", "content": "Hello"}]
   }'
 ```
 
-#### curl — con streaming
+#### curl — with streaming
 ```bash
 curl -N https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages \
   -H "x-api-key: admin" \
@@ -150,11 +150,11 @@ curl -N https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages 
     "model": "claude-opus-4-7",
     "max_tokens": 1024,
     "stream": true,
-    "messages": [{"role": "user", "content": "Hola"}]
+    "messages": [{"role": "user", "content": "Hello"}]
   }'
 ```
 
-#### Python — SDK oficial
+#### Python — official SDK
 ```python
 from anthropic import Anthropic
 
@@ -163,19 +163,19 @@ client = Anthropic(
     base_url="https://tapeless-recluse-disperser.ngrok-free.dev/anthropic",
 )
 
-# Sin streaming
+# Without streaming
 response = client.messages.create(
     model="claude-opus-4-7",
     max_tokens=1024,
-    messages=[{"role": "user", "content": "Hola"}],
+    messages=[{"role": "user", "content": "Hello"}],
 )
 print(response.content[0].text)
 
-# Con streaming
+# With streaming
 with client.messages.stream(
     model="claude-opus-4-7",
     max_tokens=1024,
-    messages=[{"role": "user", "content": "Hola"}],
+    messages=[{"role": "user", "content": "Hello"}],
 ) as stream:
     for text in stream.text_stream:
         print(text, end="", flush=True)
@@ -223,43 +223,43 @@ opencode
 
 ---
 
-## Modelos disponibles (100+)
+## Available models (100+)
 
 ### OpenAI — endpoint `/openai`
 - `gpt-5.5` · `gpt-5.5-pro`
 - `gpt-5.4-mini` · `gpt-5.4-nano` · `gpt-5.4-pro` · `gpt-5.4-thinking`
 - `gpt-5.3-codex` · `gpt-5.3-instant`
-- … toda la familia GPT-5 con sus snapshots
+- … the entire GPT-5 family with all snapshots
 
 ### Anthropic — endpoint `/anthropic`
 - `claude-opus-4-7` · `claude-opus-4-6`
 - `claude-sonnet-4-6` · `claude-sonnet-4-5`
 - `claude-haiku-4-5` · `claude-haiku-4`
-- … todo el catálogo Claude (3.x → 4.x)
+- … the full Claude catalog (3.x → 4.x)
 
 ---
 
-## Stack compatible
+## Compatible stack
 
-Todo lo que use el formato OpenAI o Anthropic Messages API funciona out-of-the-box:
+Anything that speaks the OpenAI or Anthropic Messages API format works out of the box:
 
 - **OpenAI SDK** (Python, Node, Go, Java, .NET)
 - **Anthropic SDK** (Python, Node)
-- **Claude Code** — CLI oficial de Anthropic
+- **Claude Code** — Anthropic's official CLI
 - **LangChain** / **LangGraph**
 - **Vercel AI SDK**
 - **LiteLLM**
 - **OpenRouter-style routers**
-- **Continue.dev**, **Cursor**, **Cline** y otros IDEs con base URL configurable
+- **Continue.dev**, **Cursor**, **Cline**, and any other IDE with a configurable base URL
 
 ---
 
-## Contacto
+## Contact
 
-- 🐙 [GitHub Issues](https://github.com/IngARodriguez/openapis/issues) — bugs, feature requests y solicitar acceso a la beta
+- 🐙 [GitHub Issues](https://github.com/IngARodriguez/openapis/issues) — bugs, feature requests, and beta access
 
 ---
 
-## Licencia
+## License
 
-[MIT](LICENSE) — la landing y los ejemplos son open source. El servicio detrás del proxy es propietario.
+[MIT](LICENSE) — the landing page and examples are open source. The service behind the proxy is proprietary.
