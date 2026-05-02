@@ -14,12 +14,14 @@
 
 > Una sola URL. Una sola clave. Acceso unificado a las mejores IAs del mundo, vía proxy compatible con sus SDKs oficiales.
 
-[![Beta abierta](https://img.shields.io/badge/beta-abierta-22c55e?style=flat-square)](#-beta-abierta--gratis)
-[![License: MIT](https://img.shields.io/badge/License-MIT-6e56cf?style=flat-square)](LICENSE)
-[![OpenAI compatible](https://img.shields.io/badge/OpenAI-compatible-000?style=flat-square&logo=openai&logoColor=white)](#openai)
-[![Anthropic compatible](https://img.shields.io/badge/Anthropic-compatible-D97757?style=flat-square)](#anthropic)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-CLI%20ready-D97757?style=flat-square)](#claude-code-cli)
-[![OpenCode](https://img.shields.io/badge/OpenCode-CLI%20ready-FF5C00?style=flat-square)](#opencode-cli)
+[![Beta Abierta — Gratis](https://img.shields.io/badge/✨_BETA_ABIERTA-GRATIS-22c55e?style=for-the-badge&labelColor=15803d)](#-beta-abierta--gratis)
+[![License: MIT](https://img.shields.io/badge/LICENSE-MIT-6e56cf?style=for-the-badge&labelColor=4c3a9c)](LICENSE)
+&nbsp;
+
+[![OpenAI compatible](https://img.shields.io/badge/OpenAI-COMPATIBLE-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=000000)](#openai)
+[![Anthropic compatible](https://img.shields.io/badge/Anthropic-COMPATIBLE-D97757?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=8b3f25)](#anthropic)
+[![Claude Code](https://img.shields.io/badge/Claude_Code-CLI_READY-D97757?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=1a1a1a)](#claude-code-cli)
+[![OpenCode](https://img.shields.io/badge/OpenCode-CLI_READY-FF5C00?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=1a1a1a)](#opencode-cli)
 
 **OpenAPIs** es un proxy unificado a **OpenAI** y **Anthropic**. Drop-in compatible con los SDKs oficiales — solo cambia el `base_url`, conserva tu código.
 
