@@ -1,0 +1,26 @@
+# Local server
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Env
+.env
+.env.local
+*.key
+
+# Python (in case)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (in case)
+node_modules/
