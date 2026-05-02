@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Claude Code → OpenAPIs
 
-export ANTHROPIC_BASE_URL="https://api.openapis.dev/anthropic"
-export ANTHROPIC_AUTH_TOKEN="${OPENAPIS_KEY:-tu_clave_secreta}"
+export ANTHROPIC_BASE_URL="${ANTHROPIC_BASE_URL:-https://tapeless-recluse-disperser.ngrok-free.dev/anthropic}"
+export ANTHROPIC_AUTH_TOKEN="${ANTHROPIC_AUTH_TOKEN:-${ANTHROPIC_API_KEY:-admin}}"
 
 # Verifica que tienes claude code instalado
 if ! command -v claude &>/dev/null; then

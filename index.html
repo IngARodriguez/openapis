@@ -842,7 +842,7 @@
           <span class="hero-terminal-title">~ openapis</span>
           <span class="hero-terminal-pill">200 OK · 287ms</span>
         </div>
-<pre class="hero-terminal-body"><code><span class="hl-comment">$ curl</span> <span class="hl-url">https://api.openapis.dev/openai/v1/chat/completions</span> \
+<pre class="hero-terminal-body"><code><span class="hl-comment">$ curl</span> <span class="hl-url">https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions</span> \
     <span class="hl-flag">-H</span> <span class="hl-string">"Authorization: Bearer sk-•••"</span> \
     <span class="hl-flag">-d</span> <span class="hl-string">'{"model": "gpt-5.5", "messages": [{"role": "user", "content": "Hola"}]}'</span>
 
@@ -964,8 +964,8 @@
                 <button class="copy-btn" data-copy>Copiar</button>
               </div>
 <pre><code><span class="hl-comment"># Sin streaming</span>
-<span class="hl-fn">curl</span> <span class="hl-url">https://api.openapis.dev/openai/v1/chat/completions</span> \
-  <span class="hl-flag">-H</span> <span class="hl-string">"Authorization: Bearer tu_clave_secreta"</span> \
+<span class="hl-fn">curl</span> <span class="hl-url">https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions</span> \
+  <span class="hl-flag">-H</span> <span class="hl-string">"Authorization: Bearer admin"</span> \
   <span class="hl-flag">-H</span> <span class="hl-string">"content-type: application/json"</span> \
   <span class="hl-flag">-d</span> <span class="hl-string">'{
     "model": "gpt-5.5",
@@ -974,8 +974,8 @@
   }'</span>
 
 <span class="hl-comment"># Con streaming (-N desactiva el buffer y muestra los eventos SSE en vivo)</span>
-<span class="hl-fn">curl</span> <span class="hl-flag">-N</span> <span class="hl-url">https://api.openapis.dev/openai/v1/chat/completions</span> \
-  <span class="hl-flag">-H</span> <span class="hl-string">"Authorization: Bearer tu_clave_secreta"</span> \
+<span class="hl-fn">curl</span> <span class="hl-flag">-N</span> <span class="hl-url">https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions</span> \
+  <span class="hl-flag">-H</span> <span class="hl-string">"Authorization: Bearer admin"</span> \
   <span class="hl-flag">-H</span> <span class="hl-string">"content-type: application/json"</span> \
   <span class="hl-flag">-d</span> <span class="hl-string">'{
     "model": "gpt-5.5",
@@ -993,8 +993,8 @@
                 <button class="copy-btn" data-copy>Copiar</button>
               </div>
 <pre><code><span class="hl-comment"># Sin streaming</span>
-<span class="hl-fn">curl</span> <span class="hl-url">https://api.openapis.dev/anthropic/v1/messages</span> \
-  <span class="hl-flag">-H</span> <span class="hl-string">"x-api-key: tu_clave_secreta"</span> \
+<span class="hl-fn">curl</span> <span class="hl-url">https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages</span> \
+  <span class="hl-flag">-H</span> <span class="hl-string">"x-api-key: admin"</span> \
   <span class="hl-flag">-H</span> <span class="hl-string">"anthropic-version: 2023-06-01"</span> \
   <span class="hl-flag">-H</span> <span class="hl-string">"content-type: application/json"</span> \
   <span class="hl-flag">-d</span> <span class="hl-string">'{
@@ -1004,8 +1004,8 @@
   }'</span>
 
 <span class="hl-comment"># Con streaming (-N desactiva el buffer y muestra los eventos SSE en vivo)</span>
-<span class="hl-fn">curl</span> <span class="hl-flag">-N</span> <span class="hl-url">https://api.openapis.dev/anthropic/v1/messages</span> \
-  <span class="hl-flag">-H</span> <span class="hl-string">"x-api-key: tu_clave_secreta"</span> \
+<span class="hl-fn">curl</span> <span class="hl-flag">-N</span> <span class="hl-url">https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages</span> \
+  <span class="hl-flag">-H</span> <span class="hl-string">"x-api-key: admin"</span> \
   <span class="hl-flag">-H</span> <span class="hl-string">"anthropic-version: 2023-06-01"</span> \
   <span class="hl-flag">-H</span> <span class="hl-string">"content-type: application/json"</span> \
   <span class="hl-flag">-d</span> <span class="hl-string">'{
@@ -1027,8 +1027,8 @@
 <span class="hl-keyword">from</span> openai <span class="hl-keyword">import</span> OpenAI
 
 client = <span class="hl-fn">OpenAI</span>(
-    <span class="hl-prop">api_key</span>=<span class="hl-string">"tu_clave_secreta"</span>,
-    <span class="hl-prop">base_url</span>=<span class="hl-string">"https://api.openapis.dev/openai/v1"</span>,
+    <span class="hl-prop">api_key</span>=<span class="hl-string">"admin"</span>,
+    <span class="hl-prop">base_url</span>=<span class="hl-string">"https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1"</span>,
 )
 
 response = client.chat.completions.<span class="hl-fn">create</span>(
@@ -1077,8 +1077,8 @@ response = client.chat.completions.<span class="hl-fn">create</span>(
 <span class="hl-keyword">from</span> anthropic <span class="hl-keyword">import</span> Anthropic
 
 client = <span class="hl-fn">Anthropic</span>(
-    <span class="hl-prop">api_key</span>=<span class="hl-string">"tu_clave_secreta"</span>,
-    <span class="hl-prop">base_url</span>=<span class="hl-string">"https://api.openapis.dev/anthropic"</span>,
+    <span class="hl-prop">api_key</span>=<span class="hl-string">"admin"</span>,
+    <span class="hl-prop">base_url</span>=<span class="hl-string">"https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"</span>,
 )
 
 response = client.messages.<span class="hl-fn">create</span>(

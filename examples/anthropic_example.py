@@ -2,14 +2,21 @@
 Anthropic compatible — OpenAPIs proxy.
 
 Requiere: pip install anthropic
-Configura: export OPENAPIS_KEY="tu_clave_secreta"
+
+El SDK lee ANTHROPIC_API_KEY y ANTHROPIC_BASE_URL automáticamente:
+  export ANTHROPIC_API_KEY=admin
+  export ANTHROPIC_BASE_URL=https://tapeless-recluse-disperser.ngrok-free.dev/anthropic
 """
 import os
 from anthropic import Anthropic
 
+# Si las env vars están definidas, Anthropic() las lee solas.
 client = Anthropic(
-    api_key=os.getenv("OPENAPIS_KEY", "tu_clave_secreta"),
-    base_url="https://api.openapis.dev/anthropic",
+    api_key=os.getenv("ANTHROPIC_API_KEY", "admin"),
+    base_url=os.getenv(
+        "ANTHROPIC_BASE_URL",
+        "https://tapeless-recluse-disperser.ngrok-free.dev/anthropic",
+    ),
 )
 
 # Sin streaming

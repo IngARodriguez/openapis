@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Anthropic compatible — OpenAPIs proxy
 
-API_KEY="${OPENAPIS_KEY:-tu_clave_secreta}"
-BASE_URL="https://api.openapis.dev/anthropic"
+API_KEY="${ANTHROPIC_API_KEY:-admin}"
+BASE_URL="${ANTHROPIC_BASE_URL:-https://tapeless-recluse-disperser.ngrok-free.dev/anthropic}"
 
 # Sin streaming
 curl "$BASE_URL/v1/messages" \

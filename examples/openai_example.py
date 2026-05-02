@@ -2,14 +2,22 @@
 OpenAI compatible — OpenAPIs proxy.
 
 Requiere: pip install openai
-Configura: export OPENAPIS_KEY="tu_clave_secreta"
+
+El SDK lee OPENAI_API_KEY y OPENAI_BASE_URL automáticamente:
+  export OPENAI_API_KEY=admin
+  export OPENAI_BASE_URL=https://tapeless-recluse-disperser.ngrok-free.dev/openai
 """
 import os
 from openai import OpenAI
 
+# Si las env vars están definidas, OpenAI() las lee solas.
+# Aquí las pasamos explícitas como fallback de demo.
 client = OpenAI(
-    api_key=os.getenv("OPENAPIS_KEY", "tu_clave_secreta"),
-    base_url="https://api.openapis.dev/openai/v1",
+    api_key=os.getenv("OPENAI_API_KEY", "admin"),
+    base_url=os.getenv(
+        "OPENAI_BASE_URL",
+        "https://tapeless-recluse-disperser.ngrok-free.dev/openai",
+    ) + "/v1",
 )
 
 # Sin streaming

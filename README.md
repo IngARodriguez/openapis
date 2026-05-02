@@ -32,14 +32,40 @@
 
 ---
 
+## Configura tus env vars (recomendado)
+
+Los SDKs oficiales de OpenAI y Anthropic leen estas variables automáticamente, así no tienes que pasar `base_url` ni `api_key` en código.
+
+```bash
+# OpenAI
+export OPENAI_API_KEY=admin
+export OPENAI_BASE_URL=https://tapeless-recluse-disperser.ngrok-free.dev/openai
+
+# Anthropic
+export ANTHROPIC_API_KEY=admin
+export ANTHROPIC_BASE_URL=https://tapeless-recluse-disperser.ngrok-free.dev/anthropic
+```
+
+```powershell
+# Windows PowerShell
+$env:OPENAI_API_KEY = "admin"
+$env:OPENAI_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/openai"
+$env:ANTHROPIC_API_KEY = "admin"
+$env:ANTHROPIC_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
+```
+
+> 🚧 **Beta** — el endpoint actual es un túnel ngrok que puede rotar entre reinicios. Si tu request falla, vuelve aquí para la URL actualizada.
+
+---
+
 ## Quickstart
 
 ### OpenAI
 
 #### curl — sin streaming
 ```bash
-curl https://api.openapis.dev/openai/v1/chat/completions \
-  -H "Authorization: Bearer tu_clave_secreta" \
+curl https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions \
+  -H "Authorization: Bearer admin" \
   -H "content-type: application/json" \
   -d '{
     "model": "gpt-5.5",
@@ -50,8 +76,8 @@ curl https://api.openapis.dev/openai/v1/chat/completions \
 
 #### curl — con streaming
 ```bash
-curl -N https://api.openapis.dev/openai/v1/chat/completions \
-  -H "Authorization: Bearer tu_clave_secreta" \
+curl -N https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions \
+  -H "Authorization: Bearer admin" \
   -H "content-type: application/json" \
   -d '{
     "model": "gpt-5.5",
@@ -66,8 +92,8 @@ curl -N https://api.openapis.dev/openai/v1/chat/completions \
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="tu_clave_secreta",
-    base_url="https://api.openapis.dev/openai/v1",
+    api_key="admin",
+    base_url="https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1",
 )
 
 # Sin streaming
@@ -90,8 +116,8 @@ with client.chat.completions.stream(
 
 #### curl — sin streaming
 ```bash
-curl https://api.openapis.dev/anthropic/v1/messages \
-  -H "x-api-key: tu_clave_secreta" \
+curl https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages \
+  -H "x-api-key: admin" \
   -H "anthropic-version: 2023-06-01" \
   -H "content-type: application/json" \
   -d '{
@@ -103,8 +129,8 @@ curl https://api.openapis.dev/anthropic/v1/messages \
 
 #### curl — con streaming
 ```bash
-curl -N https://api.openapis.dev/anthropic/v1/messages \
-  -H "x-api-key: tu_clave_secreta" \
+curl -N https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages \
+  -H "x-api-key: admin" \
   -H "anthropic-version: 2023-06-01" \
   -H "content-type: application/json" \
   -d '{
@@ -120,8 +146,8 @@ curl -N https://api.openapis.dev/anthropic/v1/messages \
 from anthropic import Anthropic
 
 client = Anthropic(
-    api_key="tu_clave_secreta",
-    base_url="https://api.openapis.dev/anthropic",
+    api_key="admin",
+    base_url="https://tapeless-recluse-disperser.ngrok-free.dev/anthropic",
 )
 
 # Sin streaming
@@ -146,16 +172,16 @@ with client.messages.stream(
 
 ```bash
 # Linux / macOS / WSL
-export ANTHROPIC_BASE_URL="https://api.openapis.dev/anthropic"
-export ANTHROPIC_AUTH_TOKEN="tu_clave_secreta"
+export ANTHROPIC_BASE_URL="https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
+export ANTHROPIC_AUTH_TOKEN="admin"
 
 claude
 ```
 
 ```powershell
 # Windows PowerShell
-$env:ANTHROPIC_BASE_URL = "https://api.openapis.dev/anthropic"
-$env:ANTHROPIC_AUTH_TOKEN = "tu_clave_secreta"
+$env:ANTHROPIC_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
+$env:ANTHROPIC_AUTH_TOKEN = "admin"
 
 claude
 ```

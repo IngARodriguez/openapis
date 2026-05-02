@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # OpenAI compatible — OpenAPIs proxy
 
-API_KEY="${OPENAPIS_KEY:-tu_clave_secreta}"
-BASE_URL="https://api.openapis.dev/openai/v1"
+API_KEY="${OPENAI_API_KEY:-admin}"
+BASE_URL="${OPENAI_BASE_URL:-https://tapeless-recluse-disperser.ngrok-free.dev/openai}/v1"
 
 # Sin streaming
 curl "$BASE_URL/chat/completions" \
