@@ -36,12 +36,12 @@
 ## Why OpenAPIs
 
 | | |
-|---|---|
-| 🔌 **Drop-in compatible** | Your existing code with the official SDKs keeps working — zero refactor |
-| ⚡ **Native streaming** | End-to-end SSE. Tokens arrive instantly, no buffering |
-| 🔐 **Single key** | Forget juggling multiple accounts, dashboards, and bills |
-| 🌐 **Multi-provider** | OpenAI + Anthropic + Claude Code under one URL |
-| 💸 **One-time payment** | No subscriptions, no renewals, no end-of-month surprises |
+|:--|:--|
+| ![Drop-in compatible](https://img.shields.io/badge/DROP--IN_COMPATIBLE-6e56cf?style=for-the-badge&labelColor=4c3a9c) | Your existing code with the official SDKs keeps working — zero refactor |
+| ![Native streaming](https://img.shields.io/badge/NATIVE_STREAMING-3b82f6?style=for-the-badge&labelColor=1e40af) | End-to-end SSE. Tokens arrive instantly, no buffering |
+| ![Single key](https://img.shields.io/badge/SINGLE_KEY-22c55e?style=for-the-badge&labelColor=15803d) | Forget juggling multiple accounts, dashboards, and bills |
+| ![Multi-provider](https://img.shields.io/badge/MULTI--PROVIDER-eab308?style=for-the-badge&labelColor=a16207) | OpenAI + Anthropic + Claude Code under one URL |
+| ![One-time payment](https://img.shields.io/badge/ONE--TIME_PAYMENT-ec4899?style=for-the-badge&labelColor=9d174d) | No subscriptions, no renewals, no end-of-month surprises |
 
 ---
 
