@@ -12,7 +12,7 @@
 -->
 # Open**A**P**I**s
 
-> One URL. One key. Unified access to the world's best AI models, via a proxy compatible with their official SDKs.
+> **Free Claude API + free OpenAI API** in one unified proxy. Drop-in compatible with the official **Anthropic SDK**, **OpenAI SDK**, **Claude Code CLI**, **OpenCode**, and any **OpenAI-compatible** client. 100+ models — Claude Opus 4.7, Sonnet 4.6, Haiku 4.5, GPT-5.5, GPT-5.4-mini, GPT-5.3-codex — totally free during the open beta.
 
 [![Open Beta — Free](https://img.shields.io/badge/✨_OPEN_BETA-FREE-22c55e?style=for-the-badge&labelColor=15803d)](#-open-beta--free)
 [![License: MIT](https://img.shields.io/badge/LICENSE-MIT-6e56cf?style=for-the-badge&labelColor=4c3a9c)](LICENSE)
@@ -254,9 +254,46 @@ Anything that speaks the OpenAI or Anthropic Messages API format works out of th
 
 ---
 
+## FAQ
+
+### How do I use Claude Code for free?
+Set `ANTHROPIC_BASE_URL` and `ANTHROPIC_AUTH_TOKEN` to point at OpenAPIs (see [Claude Code (CLI)](#claude-code-cli)). While the open beta lasts, every Claude Code request goes through the proxy at no cost — no Anthropic billing key needed on your side.
+
+### Is the Anthropic API really free here?
+Yes. During the open beta, the proxy gives you **free Anthropic API access** to the entire Claude catalog: `claude-opus-4-7`, `claude-sonnet-4-6`, `claude-haiku-4-5`, plus the rest of 3.x → 4.x. You never pass an Anthropic key — only the beta key.
+
+### Can I use this as a free OpenAI API?
+Yes. The same proxy serves OpenAI-compatible chat completions for the full GPT-5 family. Point your OpenAI SDK at `/openai/v1` and it behaves identically to the official endpoint — `client.chat.completions.create(...)` works unchanged.
+
+### Does Claude Code work without an Anthropic API key?
+Through OpenAPIs, yes. Claude Code accepts any Anthropic-compatible endpoint, so by setting `ANTHROPIC_BASE_URL` to OpenAPIs you skip the official key entirely. This is the same trick proxies like `claude-code-proxy`, `anthropic-proxy`, and `claude-code-router` use, but hosted for you.
+
+### Is OpenCode supported?
+Yes. OpenCode reads the standard `OPENAI_API_KEY`, `OPENAI_BASE_URL`, `ANTHROPIC_API_KEY`, and `ANTHROPIC_BASE_URL` env vars — set all four and run `opencode`. Full setup in [OpenCode (CLI)](#opencode-cli).
+
+### Which models can I call?
+Over **100**, covering OpenAI text/reasoning models (GPT-5.5, GPT-5.5-pro, GPT-5.4-mini, GPT-5.4-nano, GPT-5.4-thinking, GPT-5.3-codex, plus dated snapshots) and the full Claude 3.x → 4.x catalog. Image, video, and audio models are intentionally excluded. See [Available models](#available-models-100).
+
+### How is this different from OpenRouter, LiteLLM, or claude-code-proxy?
+OpenRouter aggregates many providers behind a unified billing page; LiteLLM is a Python library you self-host; `claude-code-proxy` is a translation layer you run locally. **OpenAPIs is a hosted proxy** that keeps the official OpenAI and Anthropic API shapes intact, so any client built for those APIs (including Claude Code, which is strict about the Anthropic format) works without translation layers or local processes.
+
+### What about rate limits?
+None during the open beta. Be considerate — the beta key is shared.
+
+### Does it support streaming?
+Yes, native SSE end-to-end on both `/openai` and `/anthropic` endpoints. See the curl `-N` and Python `client.*.stream()` examples above.
+
+---
+
 ## Contact
 
 - 🐙 [GitHub Issues](https://github.com/IngARodriguez/openapis/issues) — bugs, feature requests, and beta access
+
+---
+
+## Keywords
+
+Free Claude API · Free Anthropic API · Free OpenAI API · Free Claude Code · Claude Code free · Claude Code without API key · Claude Code proxy · Anthropic proxy · Anthropic to OpenAI · OpenAI compatible proxy · OpenAI reverse proxy · OpenCode proxy · OpenCode free · GPT-5 free · GPT-5.5 free · Claude Opus free · Claude Sonnet free · Claude Haiku free · LLM proxy · AI gateway · LiteLLM alternative · OpenRouter alternative · Free LLM API · Unified AI API · OpenAI Anthropic gateway
 
 ---
 
