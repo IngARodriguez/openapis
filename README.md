@@ -30,8 +30,6 @@
 ## 🎁 Beta abierta — gratis
 
 > Actualmente en **beta abierta**. Acceso **totalmente gratis** durante la beta.
->
-> 👉 Escríbenos para tu clave: **hola@openapis.dev**
 
 ---
 
@@ -258,8 +256,7 @@ Todo lo que use el formato OpenAI o Anthropic Messages API funciona out-of-the-b
 
 ## Contacto
 
-- 📧 **hola@openapis.dev** — para conseguir tu clave de la beta
-- 🐙 GitHub Issues — bugs y feature requests
+- 🐙 [GitHub Issues](https://github.com/IngARodriguez/openapis/issues) — bugs, feature requests y solicitar acceso a la beta
 
 ---
 
