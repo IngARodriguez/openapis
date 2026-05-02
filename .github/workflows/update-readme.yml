@@ -1,0 +1,36 @@
+name: Update README
+
+on:
+  push:
+    paths:
+      - endpoint.txt
+      - README.template.md
+      - scripts/update-readme.sh
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Regenerate README.md from template
+        run: bash scripts/update-readme.sh
+
+      - name: Commit if README changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "README.md ya está al día — nada que commitear."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: regenerate README from endpoint.txt"
+            git push
+          fi
