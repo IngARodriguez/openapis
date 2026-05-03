@@ -16,6 +16,7 @@
 
 [![Open Beta — Free](https://img.shields.io/badge/✨_OPEN_BETA-FREE-22c55e?style=for-the-badge&labelColor=15803d)](#-open-beta--free)
 [![License: MIT](https://img.shields.io/badge/LICENSE-MIT-6e56cf?style=for-the-badge&labelColor=4c3a9c)](LICENSE)
+[![Make yours here](https://img.shields.io/badge/🛠_MAKE_YOURS-HERE-3b82f6?style=for-the-badge&labelColor=1d4ed8)](https://github.com/IngARodriguez/tunnel_open_apis)
 &nbsp;
 
 [![OpenAI compatible](https://img.shields.io/badge/OpenAI-COMPATIBLE-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=000000)](#openai)
