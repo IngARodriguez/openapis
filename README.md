@@ -13,10 +13,10 @@
 # Open**A**P**I**s
 
 > **Free Claude API + free OpenAI API** in one unified proxy. Drop-in compatible with the official **Anthropic SDK**, **OpenAI SDK**, **Claude Code CLI**, **OpenCode**, and any **OpenAI-compatible** client. 100+ models — Claude Opus 4.7, Sonnet 4.6, Haiku 4.5, GPT-5.5, GPT-5.4-mini, GPT-5.3-codex — totally free during the open beta.
-> Make yours here [TUNEL_OPEN_APIs](https://github.com/IngARodriguez/tunnel_open_apis)
 
 [![Open Beta — Free](https://img.shields.io/badge/✨_OPEN_BETA-FREE-22c55e?style=for-the-badge&labelColor=15803d)](#-open-beta--free)
 [![License: MIT](https://img.shields.io/badge/LICENSE-MIT-6e56cf?style=for-the-badge&labelColor=4c3a9c)](LICENSE)
+[![Make yours here](https://img.shields.io/badge/🛠_MAKE_YOURS-HERE-3b82f6?style=for-the-badge&labelColor=1d4ed8)](https://github.com/IngARodriguez/tunnel_open_apis)
 &nbsp;
 
 [![OpenAI compatible](https://img.shields.io/badge/OpenAI-COMPATIBLE-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=000000)](#openai)
