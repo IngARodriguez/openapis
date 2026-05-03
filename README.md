@@ -6,7 +6,7 @@
     2. Run:
          scripts/update-readme.ps1   (Windows PowerShell)
          scripts/update-readme.sh    (Linux/macOS/WSL/Git Bash)
-    3. This regenerates README.md, replacing https://tapeless-recluse-disperser.ngrok-free.dev with the new URL
+    3. This regenerates README.md, replacing https://xxxx-xxxx.ngrok-free.dev with the new URL
     4. git add README.md endpoint.txt && git commit && git push
   Do not edit README.md by hand — it gets overwritten.
 -->
@@ -52,19 +52,19 @@ The official OpenAI and Anthropic SDKs read these variables automatically, so yo
 ```bash
 # OpenAI
 export OPENAI_API_KEY=admin
-export OPENAI_BASE_URL=https://tapeless-recluse-disperser.ngrok-free.dev/openai
+export OPENAI_BASE_URL=https://xxxx-xxxx.ngrok-free.dev/openai
 
 # Anthropic
 export ANTHROPIC_API_KEY=admin
-export ANTHROPIC_BASE_URL=https://tapeless-recluse-disperser.ngrok-free.dev/anthropic
+export ANTHROPIC_BASE_URL=https://xxxx-xxxx.ngrok-free.dev/anthropic
 ```
 
 ```powershell
 # Windows PowerShell
 $env:OPENAI_API_KEY = "admin"
-$env:OPENAI_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/openai"
+$env:OPENAI_BASE_URL = "https://xxxx-xxxx.ngrok-free.dev/openai"
 $env:ANTHROPIC_API_KEY = "admin"
-$env:ANTHROPIC_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
+$env:ANTHROPIC_BASE_URL = "https://xxxx-xxxx.ngrok-free.dev/anthropic"
 ```
 
 > 🚧 **Beta** — the current endpoint is an ngrok tunnel that may rotate on restart. If a request fails, come back here for the updated URL.
@@ -77,7 +77,7 @@ $env:ANTHROPIC_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/ant
 
 #### curl — without streaming
 ```bash
-curl https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions \
+curl https://xxxx-xxxx.ngrok-free.dev/openai/v1/chat/completions \
   -H "Authorization: Bearer admin" \
   -H "content-type: application/json" \
   -d '{
@@ -89,7 +89,7 @@ curl https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completion
 
 #### curl — with streaming
 ```bash
-curl -N https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions \
+curl -N https://xxxx-xxxx.ngrok-free.dev/openai/v1/chat/completions \
   -H "Authorization: Bearer admin" \
   -H "content-type: application/json" \
   -d '{
@@ -106,7 +106,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key="admin",
-    base_url="https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1",
+    base_url="https://xxxx-xxxx.ngrok-free.dev/openai/v1",
 )
 
 # Without streaming
@@ -129,7 +129,7 @@ with client.chat.completions.stream(
 
 #### curl — without streaming
 ```bash
-curl https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages \
+curl https://xxxx-xxxx.ngrok-free.dev/anthropic/v1/messages \
   -H "x-api-key: admin" \
   -H "anthropic-version: 2023-06-01" \
   -H "content-type: application/json" \
@@ -142,7 +142,7 @@ curl https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages \
 
 #### curl — with streaming
 ```bash
-curl -N https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages \
+curl -N https://xxxx-xxxx.ngrok-free.dev/anthropic/v1/messages \
   -H "x-api-key: admin" \
   -H "anthropic-version: 2023-06-01" \
   -H "content-type: application/json" \
@@ -160,7 +160,7 @@ from anthropic import Anthropic
 
 client = Anthropic(
     api_key="admin",
-    base_url="https://tapeless-recluse-disperser.ngrok-free.dev/anthropic",
+    base_url="https://xxxx-xxxx.ngrok-free.dev/anthropic",
 )
 
 # Without streaming
@@ -185,7 +185,7 @@ with client.messages.stream(
 
 ```bash
 # Linux / macOS / WSL
-export ANTHROPIC_BASE_URL="https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
+export ANTHROPIC_BASE_URL="https://xxxx-xxxx.ngrok-free.dev/anthropic"
 export ANTHROPIC_AUTH_TOKEN="admin"
 
 claude
@@ -193,7 +193,7 @@ claude
 
 ```powershell
 # Windows PowerShell
-$env:ANTHROPIC_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
+$env:ANTHROPIC_BASE_URL = "https://xxxx-xxxx.ngrok-free.dev/anthropic"
 $env:ANTHROPIC_AUTH_TOKEN = "admin"
 
 claude
@@ -203,9 +203,9 @@ claude
 
 ```bash
 # Linux / macOS / WSL
-export ANTHROPIC_BASE_URL="https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
+export ANTHROPIC_BASE_URL="https://xxxx-xxxx.ngrok-free.dev/anthropic"
 export ANTHROPIC_API_KEY="admin"
-export OPENAI_BASE_URL="https://tapeless-recluse-disperser.ngrok-free.dev/openai"
+export OPENAI_BASE_URL="https://xxxx-xxxx.ngrok-free.dev/openai"
 export OPENAI_API_KEY="admin"
 
 opencode
@@ -213,9 +213,9 @@ opencode
 
 ```powershell
 # Windows PowerShell
-$env:ANTHROPIC_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
+$env:ANTHROPIC_BASE_URL = "https://xxxx-xxxx.ngrok-free.dev/anthropic"
 $env:ANTHROPIC_API_KEY = "admin"
-$env:OPENAI_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/openai"
+$env:OPENAI_BASE_URL = "https://xxxx-xxxx.ngrok-free.dev/openai"
 $env:OPENAI_API_KEY = "admin"
 
 opencode
