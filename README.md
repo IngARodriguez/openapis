@@ -81,20 +81,20 @@ curl https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completion
   -H "Authorization: Bearer admin" \
   -H "content-type: application/json" \
   -d '{
-    "model": "gpt-4o-mini",
-    "max_tokens": 1024,
+    "model": "gpt-5.4",
+    "max_completion_tokens": 1024,
     "messages": [{"role": "user", "content": "Hello"}]
   }'
 ```
 
 #### curl — with streaming
 ```bash
-curl -N https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions \
+curl https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions \
   -H "Authorization: Bearer admin" \
   -H "content-type: application/json" \
   -d '{
-    "model": "gpt-4o-mini",
-    "max_tokens": 1024,
+    "model": "gpt-5.4",
+    "max_completion_tokens": 1024,
     "stream": true,
     "messages": [{"role": "user", "content": "Hello"}]
   }'
