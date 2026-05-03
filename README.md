@@ -81,7 +81,7 @@ curl https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completion
   -H "Authorization: Bearer admin" \
   -H "content-type: application/json" \
   -d '{
-    "model": "gpt-5.5",
+    "model": "gpt-4o-mini",
     "max_tokens": 1024,
     "messages": [{"role": "user", "content": "Hello"}]
   }'
@@ -93,7 +93,7 @@ curl -N https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/complet
   -H "Authorization: Bearer admin" \
   -H "content-type: application/json" \
   -d '{
-    "model": "gpt-5.5",
+    "model": "gpt-4o-mini",
     "max_tokens": 1024,
     "stream": true,
     "messages": [{"role": "user", "content": "Hello"}]
@@ -111,14 +111,14 @@ client = OpenAI(
 
 # Without streaming
 response = client.chat.completions.create(
-    model="gpt-5.5",
+    model="gpt-4o-mini",
     messages=[{"role": "user", "content": "Hello"}],
 )
 print(response.choices[0].message.content)
 
 # With streaming
 with client.chat.completions.stream(
-    model="gpt-5.5",
+    model="gpt-4o-mini",
     messages=[{"role": "user", "content": "Hello"}],
 ) as stream:
     for text in stream.text_stream:
