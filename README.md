@@ -13,6 +13,7 @@
 # Open**A**P**I**s
 
 > **Free Claude API + free OpenAI API** in one unified proxy. Drop-in compatible with the official **Anthropic SDK**, **OpenAI SDK**, **Claude Code CLI**, **OpenCode**, and any **OpenAI-compatible** client. 100+ models — Claude Opus 4.7, Sonnet 4.6, Haiku 4.5, GPT-5.5, GPT-5.4-mini, GPT-5.3-codex — totally free during the open beta.
+> Make yours here [TUNEL_OPEN_APIs](https://github.com/IngARodriguez/tunnel_open_apis)
 
 [![Open Beta — Free](https://img.shields.io/badge/✨_OPEN_BETA-FREE-22c55e?style=for-the-badge&labelColor=15803d)](#-open-beta--free)
 [![License: MIT](https://img.shields.io/badge/LICENSE-MIT-6e56cf?style=for-the-badge&labelColor=4c3a9c)](LICENSE)
@@ -41,7 +42,6 @@
 | ![Native streaming](https://img.shields.io/badge/NATIVE_STREAMING-3b82f6?style=for-the-badge&labelColor=1e40af) | End-to-end SSE. Tokens arrive instantly, no buffering |
 | ![Single key](https://img.shields.io/badge/SINGLE_KEY-22c55e?style=for-the-badge&labelColor=15803d) | Forget juggling multiple accounts, dashboards, and bills |
 | ![Multi-provider](https://img.shields.io/badge/MULTI--PROVIDER-eab308?style=for-the-badge&labelColor=a16207) | OpenAI + Anthropic + Claude Code under one URL |
-| ![One-time payment](https://img.shields.io/badge/ONE--TIME_PAYMENT-ec4899?style=for-the-badge&labelColor=9d174d) | No subscriptions, no renewals, no end-of-month surprises |
 
 ---
 
