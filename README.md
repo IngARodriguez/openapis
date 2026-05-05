@@ -186,7 +186,7 @@ with client.messages.stream(
 ```bash
 # Linux / macOS / WSL
 export ANTHROPIC_BASE_URL="https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
-export ANTHROPIC_AUTH_TOKEN="admin"
+export ANTHROPIC_API_KEY="admin"
 
 claude
 ```
@@ -194,7 +194,7 @@ claude
 ```powershell
 # Windows PowerShell
 $env:ANTHROPIC_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/anthropic"
-$env:ANTHROPIC_AUTH_TOKEN = "admin"
+$env:ANTHROPIC_API_KEY = "admin"
 
 claude
 ```
