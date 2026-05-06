@@ -75,18 +75,6 @@ $env:ANTHROPIC_BASE_URL = "https://tapeless-recluse-disperser.ngrok-free.dev/ant
 
 ### OpenAI
 
-#### curl — without streaming
-```bash
-curl https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions \
-  -H "Authorization: Bearer admin" \
-  -H "content-type: application/json" \
-  -d '{
-    "model": "gpt-5.4",
-    "max_completion_tokens": 1024,
-    "messages": [{"role": "user", "content": "Hello"}]
-  }'
-```
-
 #### curl — with streaming
 ```bash
 curl https://tapeless-recluse-disperser.ngrok-free.dev/openai/v1/chat/completions \
@@ -126,19 +114,6 @@ with client.chat.completions.stream(
 ```
 
 ### Anthropic
-
-#### curl — without streaming
-```bash
-curl https://tapeless-recluse-disperser.ngrok-free.dev/anthropic/v1/messages \
-  -H "x-api-key: admin" \
-  -H "anthropic-version: 2023-06-01" \
-  -H "content-type: application/json" \
-  -d '{
-    "model": "claude-opus-4-7",
-    "max_tokens": 1024,
-    "messages": [{"role": "user", "content": "Hello"}]
-  }'
-```
 
 #### curl — with streaming
 ```bash
