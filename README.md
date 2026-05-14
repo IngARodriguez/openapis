@@ -10,6 +10,8 @@
     4. git add README.md endpoint.txt && git commit && git push
   Do not edit README.md by hand — it gets overwritten.
 -->
+
+[![API — ACTIVE ](https://img.shields.io/badge/✨_API_ACTIVE-22c55e?style=for-the-badge&labelColor=15803d)](#-open-beta--free)
 # Open**A**P**I**s
 
 > **Free Claude API + free OpenAI API** in one unified proxy. Drop-in compatible with the official **Anthropic SDK**, **OpenAI SDK**, **Claude Code CLI**, **OpenCode**, and any **OpenAI-compatible** client. 100+ models — Claude Opus 4.7, Sonnet 4.6, Haiku 4.5, GPT-5.5, GPT-5.4-mini, GPT-5.3-codex — totally free during the open beta.
