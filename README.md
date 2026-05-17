@@ -11,7 +11,7 @@
   Do not edit README.md by hand — it gets overwritten.
 -->
 
-[![API — OFFLINE ](https://img.shields.io/badge/✨_API_OFFLINE-F54927?style=for-the-badge&labelColor=F54927)](#-open-beta--free)
+[![API — ONLINE ](https://img.shields.io/badge/✨_API_ONLINE-22c55e?style=for-the-badge&labelColor=22c55e)](#-open-beta--free)
 # Open**A**P**I**s
 
 > **Free Claude API + free OpenAI API** in one unified proxy. Drop-in compatible with the official **Anthropic SDK**, **OpenAI SDK**, **Claude Code CLI**, **OpenCode**, and any **OpenAI-compatible** client. 100+ models — Claude Opus 4.7, Sonnet 4.6, Haiku 4.5, GPT-5.5, GPT-5.4-mini, GPT-5.3-codex — totally free during the open beta.
