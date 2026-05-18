@@ -231,7 +231,7 @@ Anything that speaks the OpenAI or Anthropic Messages API format works out of th
 ## FAQ
 
 ### How do I use Claude Code for free?
-Set `ANTHROPIC_BASE_URL` and `ANTHROPIC_AUTH_TOKEN` to point at OpenAPIs (see [Claude Code (CLI)](#claude-code-cli)). While the open beta lasts, every Claude Code request goes through the proxy at no cost — no Anthropic billing key needed on your side.
+Set `ANTHROPIC_BASE_URL` and `ANTHROPIC_API_KEY` to point at OpenAPIs (see [Claude Code (CLI)](#claude-code-cli)). While the open beta lasts, every Claude Code request goes through the proxy at no cost — no Anthropic billing key needed on your side.
 
 ### Is the Anthropic API really free here?
 Yes. During the open beta, the proxy gives you **free Anthropic API access** to the entire Claude catalog: `claude-opus-4-7`, `claude-sonnet-4-6`, `claude-haiku-4-5`, plus the rest of 3.x → 4.x. You never pass an Anthropic key — only the beta key.
