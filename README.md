@@ -68,8 +68,6 @@ $env:ANTHROPIC_API_KEY = "admin"
 $env:ANTHROPIC_BASE_URL = "https://api.openapis.online/anthropic"
 ```
 
-> 🚧 **Beta** — the current endpoint is an ngrok tunnel that may rotate on restart. If a request fails, come back here for the updated URL.
-
 ---
 
 ## Quickstart
