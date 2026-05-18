@@ -20,9 +20,9 @@
 [![License: MIT](https://img.shields.io/badge/LICENSE-MIT-6e56cf?style=for-the-badge&labelColor=4c3a9c)](LICENSE)
 &nbsp;
 
-[![OpenAI compatible](https://img.shields.io/badge/OpenAI-COMPATIBLE-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=000000)](#openai)
-[![Anthropic compatible](https://img.shields.io/badge/Anthropic-COMPATIBLE-D97757?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=8b3f25)](#anthropic)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-CLI_READY-D97757?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=1a1a1a)](#claude-code-cli)
+[![OpenAI compatible](https://img.shields.io/badge/OpenAI-COMPATIBLE-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=000000)](#openai)  
+[![Anthropic compatible](https://img.shields.io/badge/Anthropic-COMPATIBLE-D97757?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=8b3f25)](#anthropic)  
+[![Claude Code](https://img.shields.io/badge/Claude_Code-CLI_READY-D97757?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=1a1a1a)](#claude-code-cli)  
 [![OpenCode](https://img.shields.io/badge/OpenCode-CLI_READY-FF5C00?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=1a1a1a)](#opencode-cli)
 
 **OpenAPIs** is a unified proxy to **OpenAI** and **Anthropic**. Drop-in compatible with their official SDKs — just swap the `base_url`, keep your code.
