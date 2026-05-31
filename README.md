@@ -18,7 +18,7 @@
 >
 > 💬 Community: https://telegram.me/openapis
 
-[![API — ONLINE ](https://img.shields.io/badge/✨_API_ONLINE-22c55e?style=for-the-badge&labelColor=22c55e)](#-open-beta--free)
+<!--[![API — ONLINE ](https://img.shields.io/badge/✨_API_ONLINE-22c55e?style=for-the-badge&labelColor=22c55e)](#-open-beta--free) -->
 [![API — INESTABLE](https://img.shields.io/badge/⚠️_API_INESTABLE-eab308?style=for-the-badge&labelColor=eab308)](#-open-beta--free)
 # Open**A**P**I**s
 
