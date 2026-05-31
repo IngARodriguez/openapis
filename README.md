@@ -18,11 +18,6 @@
 >
 > 💬 Community: https://telegram.me/openapis
 >
-## 🧪 My Personal Use — Proof of Concept
-
-Here are some screenshots from my own usage of the OpenAPIs:
-
-<img src="personal-use-openapis/cap-1.png" width="25%"> <img src="personal-use-openapis/cap-2.png" width="25%">
 
 <!--[![API — ONLINE ](https://img.shields.io/badge/✨_API_ONLINE-22c55e?style=for-the-badge&labelColor=22c55e)](#-open-beta--free) -->
 [![API — INESTABLE](https://img.shields.io/badge/⚠️_API_INESTABLE-eab308?style=for-the-badge&labelColor=eab308)](#-open-beta--free)
@@ -46,6 +41,12 @@ Here are some screenshots from my own usage of the OpenAPIs:
 ## 🎁 Open Beta — Free
 
 > Currently in **open beta**. **Completely free** access while the beta lasts.
+
+## 🧪 My Personal Use — Proof of Concept
+
+Here are some screenshots from my own usage of the OpenAPIs:
+
+<img src="personal-use-openapis/cap-1.png" width="25%"> <img src="personal-use-openapis/cap-2.png" width="25%">
 
 ---
 
