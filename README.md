@@ -19,8 +19,8 @@
 > 💬 Community: https://telegram.me/openapis
 >
 
-<!--[![API — ONLINE ](https://img.shields.io/badge/✨_API_ONLINE-22c55e?style=for-the-badge&labelColor=22c55e)](#-open-beta--free) -->
-[![API — INESTABLE](https://img.shields.io/badge/⚠️_API_INESTABLE-eab308?style=for-the-badge&labelColor=eab308)](#-open-beta--free)
+[![API — ONLINE ](https://img.shields.io/badge/✨_API_ONLINE-22c55e?style=for-the-badge&labelColor=22c55e)](#-open-beta--free) 
+<!--[![API — INESTABLE](https://img.shields.io/badge/⚠️_API_INESTABLE-eab308?style=for-the-badge&labelColor=eab308)](#-open-beta--free)-->
 # Open**A**P**I**s
 
 > **Free Claude API + free OpenAI API** in one unified proxy. Drop-in compatible with the official **Anthropic SDK**, **OpenAI SDK**, **Claude Code CLI**, **OpenCode**, and any **OpenAI-compatible** client. 100+ models — Claude Opus 4.7, Sonnet 4.6, Haiku 4.5, GPT-5.5, GPT-5.4-mini, GPT-5.3-codex — totally free during the open beta.
